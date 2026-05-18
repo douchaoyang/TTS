@@ -1,8 +1,4 @@
-# LibreTTS - 在线文本转语音工具
-
-LibreTTS 是一款免费的在线文本转语音工具，支持多种声音选择，可调节语速和语调，提供即时试听和下载功能。
-
-> 本项目曾用名 Ciallo TTS。
+# TTS
 
 ## 功能特点
 
@@ -29,8 +25,6 @@ LibreTTS 是一款免费的在线文本转语音工具，支持多种声音选�
 - `/api/voices` - 获取可用语音列表 API
   - 仅支持 GET 方法
   - 示例: `/api/voices?l=zh&f=1` (l参数用于筛选语言，f参数指定返回格式)
-
-例如：`https://libretts.is-an.org/api/tts`
 
 ### 自定义 API
 
@@ -85,16 +79,6 @@ LibreTTS 支持添加自定义 API 端点，目前支持两种格式：
 
 ## 部署指南
 
-### Vercel 部署
-
-1. Fork 本仓库到你的 GitHub 账号
-
-2. 登录 [Vercel](https://vercel.com/)，点击 "New Project"
-
-3. 导入你 fork 的仓库，并选择默认设置部署即可
-
-4. 部署完成后，你会获得一个 `your-project.vercel.app` 的域名
-
 ### Cloudflare Pages 部署
 
 1. Fork 本仓库到你的 GitHub 账号
@@ -108,10 +92,6 @@ LibreTTS 支持添加自定义 API 端点，目前支持两种格式：
      - 输出目录：`/`
      - 环境变量：无需设置
 
-4. 部署完成后，你会获得一个 `xxx.pages.dev` 的域名
-
 ## 环境变量
 
 除了原有配置外，现在项目支持设置环境变量 PASSWORD 来开启访问密码验证。如果 PASSWORD 非空，则用户第一次访问页面时会显示密码输入界面，输入正确后在该设备上后续访问将不再需要验证。
-
-[![Powered by DartNode](https://dartnode.com/branding/DN-Open-Source-sm.png)](https://dartnode.com "Powered by DartNode - Free VPS for Open Source")
